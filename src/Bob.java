@@ -19,7 +19,6 @@ public class Bob {
             } else {
                 System.out.println("BOB SAID: " + "Whatever");
             }
-
 //challenge yourself to make this more interactive and able to conduct a do while loop
         }
 }
