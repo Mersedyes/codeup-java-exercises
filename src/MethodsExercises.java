@@ -40,4 +40,6 @@ public class MethodsExercises {
         int result =  a*b;
         return result;
     }
+
+    //Bonus: try recursion to get the method to call itself
 }
