@@ -11,10 +11,12 @@ public class MethodsExercises {
 //            System.out.println(ten * two);
 //            System.out.println(ten % two);
         System.out.println("Addition of two integers: " + addInteger(10,2));
-        System.out.println("Addition of two integers: " + subtractInteger(10,2));
-        System.out.println("Addition of two integers: " + multiplyInteger(10,2));
-        System.out.println("Addition of two integers: " + divideInteger(10,2));
-        System.out.println("Addition of two integers: " + modulusInteger(10,2));
+        System.out.println("Subtraction of two integers: " + subtractInteger(10,2));
+        System.out.println("Multiplication of two integers: " + multiplyInteger(10,2));
+        System.out.println("Division of two integers: " + divideInteger(10,2));
+        System.out.println("Remainder of two integers: " + modulusInteger(10,2));
+        System.out.println("Alternative Multiplication of two integers: " + multiplyBonusInteger(10,2));
+
 //        twoIntegers(10,2);
 
     }
@@ -33,5 +35,9 @@ public class MethodsExercises {
     }
     public static int modulusInteger(int a, int b){
         return a%b;
+    }
+    public static int multiplyBonusInteger(int a,int b){
+        int result =  a*b;
+        return result;
     }
 }
