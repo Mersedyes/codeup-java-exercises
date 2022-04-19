@@ -19,5 +19,5 @@ The getInt(int min, int max) method should keep prompting the user for input unt
 
 Create another class named InputTest that has a static main method that uses all the methods from the Input class*/
 public class Input {
-    private Scanner scanner = new scanner(System.in);
+    //private Scanner scanner = new scanner(System.in);
 }
