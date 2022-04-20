@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Student {
     private String name;
@@ -18,7 +19,7 @@ public class Student {
     //adds the grade to the grades property
     public void addGrade(int grade){
         grades.add(grade);
-    };
+    }
 
     //returns the average of the students grades
     public double getGradeAverage(){

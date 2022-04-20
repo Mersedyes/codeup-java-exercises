@@ -19,5 +19,79 @@ The getInt(int min, int max) method should keep prompting the user for input unt
 
 Create another class named InputTest that has a static main method that uses all the methods from the Input class*/
 public class Input {
-    //private Scanner scanner = new scanner(System.in);
-}
+    private Scanner scanner = new Scanner(System.in);
+
+
+    public String getString(){
+        return scanner.nextLine();
+    }
+
+    boolean yesNo(){
+        System.out.println("Confirm Yes or No:");
+        String input = scanner.nextLine();
+        if(input.toLowerCase().contains("y")){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+    public long getInt(long min, long max){
+//        System.out.printf("Enter a number from %s to %s:\n", min, max);
+        long input = scanner.nextInt();
+        if (input > max || input < min){
+            System.out.println("Invalid entry! Input another number");
+            return getInt(min, max);
+        }
+        else{
+//            System.out.printf("You entered %s!\n", input);
+            return input;
+        }
+    }
+
+
+    public int getInt(){
+        try {
+//            System.out.printf("Enter a number:\n");
+            String input = scanner.nextLine();
+//            System.out.printf("You entered %s!\n", input);
+            return Integer.valueOf(input);
+        }
+        catch (NumberFormatException e) {
+            System.out.println("Uh oh, something went wrong: " + e.getMessage());
+//            System.out.println("Here is some more detail:");
+//            e.printStackTrace();
+            return getInt();
+        }
+    }
+
+
+    double getDouble(double min, double max){
+        System.out.printf("Enter a number from %s to %s:\n", min, max);
+        double input = scanner.nextInt();
+        if (input > max || input < min){
+            System.out.println("Invalid entry! Input another number\n");
+            return getDouble(min, max);
+        }
+        else{
+            System.out.printf("You entered %s!", input);
+            return 0;
+        }
+    }
+
+
+    public double getDouble(){
+        try{
+            System.out.printf("Enter a number:\n");
+            String input = scanner.nextLine();
+//            System.out.printf("You entered %s!", input);
+            return Integer.valueOf(input);
+        }
+        catch(NumberFormatException e){
+            System.out.println("Uh oh, something went wrong: " + e.getMessage());
+//            System.out.println("Here is some more detail:");
+//            e.printStackTrace();
+            return getDouble();
+        }
+}}
