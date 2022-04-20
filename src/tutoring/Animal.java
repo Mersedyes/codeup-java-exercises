@@ -1,6 +1,7 @@
 package tutoring;
 
 public abstract class Animal {
+//typically, we do NOT add main methods (or any static methods) to a POJO
 
     //fields
     protected int numberOfLegs;
@@ -27,5 +28,8 @@ public abstract class Animal {
         public void setPreferredClimate(String preferredClimate) {
             this.preferredClimate = preferredClimate;
         }
+
     }
+    abstract String getAnimalInfo();
+
 }

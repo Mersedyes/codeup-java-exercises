@@ -11,7 +11,7 @@ Create an abstract class of Animal
 - add getters and setters
 - add a constructor that sets all properties
 
-Create a class of Dog, Fish, Cat that extends Animal
+Create a class of tutoring.Dog, Fish, Cat that extends Animal
 
 - add additional private properties that are unique to each specific animal type and getters and setters for these properties
 - overload the getAnimalInfo() to invoke the parent getAnimalInfo() method and return extra info on all the additional
@@ -22,4 +22,4 @@ Create a class AnimalTester with a method ```public static void displayAnimalDet
 returned from calling the getAnimalInfo() method for a given animal object
 
 - this method should take in any Animal object but test it in the main method
-with instantiated Dog, Fish, Cat objects of type Animal.
+with instantiated tutoring.Dog, Fish, Cat objects of type Animal.
