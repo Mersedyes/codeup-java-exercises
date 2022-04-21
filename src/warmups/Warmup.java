@@ -1,5 +1,7 @@
 package warmups;
 
+import util.Input;
+
 import java.util.*;
 import java.util.Scanner;
 
@@ -31,6 +33,6 @@ do{
     if (original.equals(reverse))
         System.out.println("The entered word or number IS a palindrome");
     else System.out.println("The entered word or number IS NOT a palindrome");
-} while(true);
+} while(util.Input.yesNo("Continue? (y/n)"));
     }
 }

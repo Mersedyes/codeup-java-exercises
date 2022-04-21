@@ -19,15 +19,15 @@ The getInt(int min, int max) method should keep prompting the user for input unt
 
 Create another class named InputTest that has a static main method that uses all the methods from the Input class*/
 public class Input {
-    private Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
 
     public String getString(){
         return scanner.nextLine();
     }
 
-    boolean yesNo(){
-        System.out.println("Confirm Yes or No:");
+    public static boolean yesNo(String s){
+        System.out.println("Continue? Yes or No:");
         String input = scanner.nextLine();
         if(input.toLowerCase().contains("y")){
             return true;
