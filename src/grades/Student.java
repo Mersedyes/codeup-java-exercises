@@ -23,14 +23,18 @@ public class Student {
 
     //returns the average of the students grades
     public double getGradeAverage(){
-        double sum = 0;
+        double avg = 0;
         for(Integer grade: grades) {
-            sum += grade;
+            avg += grade;
         }
-        return sum / grades.size();
+        return (avg / grades.size());
     }
 
     public static void main(String[] args) {
-
+    Student ernie = new Student("Ernie");
+        ernie.addGrade(85);
+        ernie.addGrade(92);
+        ernie.addGrade(96);
+        System.out.println(ernie.getGradeAverage());
     }
 }
